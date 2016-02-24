@@ -1,20 +1,20 @@
 <h1>Cats</h1>
 <% @Cats.each do |cat| %>
-	<%= cat.name %>
+	<p><%= cat.name %></p>
 <% end %>
 <h1>Users</h1>
 <% @Users.each do |user| %>
-        <%= user.name+', '+user.email %>
+        <p><%= user.name+', '+user.email %></p>
 <% end %>
 
 <h1>Finished Tasks</h1>
 <% @Finished.each do |t| %>
-        <%= t.tasks %>
+        <p><%= t.tasks %></p>
 <% end%>
 
 <h1>Unfinished Tasks</h1>
 <% @Unfinished.each do |u| %>
-        <%=u.tasks%>
+        <p><%=u.tasks%></p>
 <% end%>
 
 
